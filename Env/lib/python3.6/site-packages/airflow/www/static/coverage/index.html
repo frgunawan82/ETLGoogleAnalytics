@@ -1,0 +1,599 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Coverage report</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.debounce.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.index_ready);
+    </script>
+</head>
+<body class="indexfile">
+
+<div id="header">
+    <div class="content">
+        <h1>Coverage report:
+            <span class="pc_cov">28%</span>
+        </h1>
+
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+
+        <form id="filter_container">
+            <input id="filter" type="text" value="" placeholder="filter..." />
+        </form>
+    </div>
+</div>
+
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">n</span>
+        <span class="key">s</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        
+        <span class="key">c</span> &nbsp; change column sorting
+    </p>
+    </div>
+</div>
+
+<div id="index">
+    <table class="index">
+        <thead>
+            
+            <tr class="tablehead" title="Click to sort">
+                <th class="name left headerSortDown shortkey_n">Module</th>
+                <th class="shortkey_s">statements</th>
+                <th class="shortkey_m">missing</th>
+                <th class="shortkey_x">excluded</th>
+                
+                <th class="right shortkey_c">coverage</th>
+            </tr>
+        </thead>
+        
+        <tfoot>
+            <tr class="total">
+                <td class="name left">Total</td>
+                <td>5549</td>
+                <td>4000</td>
+                <td>19</td>
+                
+                <td class="right" data-ratio="1549 5549">28%</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_py.html">airflow.py</a></td>
+                <td>43</td>
+                <td>15</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="28 43">65%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_bin_py.html">airflow/bin.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_bin_cli_py.html">airflow/bin/cli.py</a></td>
+                <td>371</td>
+                <td>306</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="65 371">18%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_configuration_py.html">airflow/configuration.py</a></td>
+                <td>197</td>
+                <td>77</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="120 197">61%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_exceptions_py.html">airflow/exceptions.py</a></td>
+                <td>8</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="8 8">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_executors_py.html">airflow/executors.py</a></td>
+                <td>27</td>
+                <td>13</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="14 27">52%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_executors_base_executor_py.html">airflow/executors/base_executor.py</a></td>
+                <td>53</td>
+                <td>33</td>
+                <td>9</td>
+                
+                <td class="right" data-ratio="20 53">38%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_executors_celery_executor_py.html">airflow/executors/celery_executor.py</a></td>
+                <td>60</td>
+                <td>33</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="27 60">45%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_executors_local_executor_py.html">airflow/executors/local_executor.py</a></td>
+                <td>49</td>
+                <td>32</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="17 49">35%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_executors_sequential_executor_py.html">airflow/executors/sequential_executor.py</a></td>
+                <td>22</td>
+                <td>11</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="11 22">50%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_hooks_S3_hook_py.html">airflow/hooks/S3_hook.py</a></td>
+                <td>179</td>
+                <td>143</td>
+                <td>10</td>
+                
+                <td class="right" data-ratio="36 179">20%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_hooks_py.html">airflow/hooks.py</a></td>
+                <td>16</td>
+                <td>8</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="8 16">50%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_hooks_base_hook_py.html">airflow/hooks/base_hook.py</a></td>
+                <td>43</td>
+                <td>22</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="21 43">49%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_hooks_dbapi_hook_py.html">airflow/hooks/dbapi_hook.py</a></td>
+                <td>117</td>
+                <td>92</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="25 117">21%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_hooks_hive_hooks_py.html">airflow/hooks/hive_hooks.py</a></td>
+                <td>290</td>
+                <td>251</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="39 290">13%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_hooks_http_hook_py.html">airflow/hooks/http_hook.py</a></td>
+                <td>44</td>
+                <td>34</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="10 44">23%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_hooks_mysql_hook_py.html">airflow/hooks/mysql_hook.py</a></td>
+                <td>38</td>
+                <td>29</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="9 38">24%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_hooks_postgres_hook_py.html">airflow/hooks/postgres_hook.py</a></td>
+                <td>19</td>
+                <td>10</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="9 19">47%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_hooks_sqlite_hook_py.html">airflow/hooks/sqlite_hook.py</a></td>
+                <td>10</td>
+                <td>3</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="7 10">70%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_jobs_py.html">airflow/jobs.py</a></td>
+                <td>609</td>
+                <td>530</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="79 609">13%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_macros_py.html">airflow/macros.py</a></td>
+                <td>25</td>
+                <td>12</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="13 25">52%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_macros_hive_py.html">airflow/macros/hive.py</a></td>
+                <td>31</td>
+                <td>27</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="4 31">13%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_models_py.html">airflow/models.py</a></td>
+                <td>1738</td>
+                <td>1298</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="440 1738">25%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_py.html">airflow/operators.py</a></td>
+                <td>17</td>
+                <td>8</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="9 17">53%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_bash_operator_py.html">airflow/operators/bash_operator.py</a></td>
+                <td>46</td>
+                <td>30</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="16 46">35%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_check_operator_py.html">airflow/operators/check_operator.py</a></td>
+                <td>125</td>
+                <td>91</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="34 125">27%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_dagrun_operator_py.html">airflow/operators/dagrun_operator.py</a></td>
+                <td>28</td>
+                <td>15</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="13 28">46%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_docker_operator_py.html">airflow/operators/docker_operator.py</a></td>
+                <td>73</td>
+                <td>57</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="16 73">22%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_dummy_operator_py.html">airflow/operators/dummy_operator.py</a></td>
+                <td>9</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="7 9">78%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_hive_operator_py.html">airflow/operators/hive_operator.py</a></td>
+                <td>37</td>
+                <td>20</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="17 37">46%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_http_operator_py.html">airflow/operators/http_operator.py</a></td>
+                <td>26</td>
+                <td>14</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="12 26">46%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_mysql_operator_py.html">airflow/operators/mysql_operator.py</a></td>
+                <td>19</td>
+                <td>8</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="11 19">58%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_postgres_operator_py.html">airflow/operators/postgres_operator.py</a></td>
+                <td>19</td>
+                <td>8</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="11 19">58%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_python_operator_py.html">airflow/operators/python_operator.py</a></td>
+                <td>63</td>
+                <td>45</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="18 63">29%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_sensors_py.html">airflow/operators/sensors.py</a></td>
+                <td>228</td>
+                <td>155</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="73 228">32%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_operators_subdag_operator_py.html">airflow/operators/subdag_operator.py</a></td>
+                <td>29</td>
+                <td>16</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="13 29">45%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_plugins_manager_py.html">airflow/plugins_manager.py</a></td>
+                <td>79</td>
+                <td>39</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="40 79">51%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_security_py.html">airflow/security.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_security_utils_py.html">airflow/security/utils.py</a></td>
+                <td>37</td>
+                <td>27</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="10 37">27%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_settings_py.html">airflow/settings.py</a></td>
+                <td>53</td>
+                <td>11</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="42 53">79%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_py.html">airflow/utils.py</a></td>
+                <td>6</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="4 6">67%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_asciiart_py.html">airflow/utils/asciiart.py</a></td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="2 2">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_dates_py.html">airflow/utils/dates.py</a></td>
+                <td>62</td>
+                <td>51</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="11 62">18%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_db_py.html">airflow/utils/db.py</a></td>
+                <td>110</td>
+                <td>82</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="28 110">25%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_decorators_py.html">airflow/utils/decorators.py</a></td>
+                <td>48</td>
+                <td>34</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="14 48">29%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_email_py.html">airflow/utils/email.py</a></td>
+                <td>56</td>
+                <td>38</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="18 56">32%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_file_py.html">airflow/utils/file.py</a></td>
+                <td>16</td>
+                <td>8</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="8 16">50%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_helpers_py.html">airflow/utils/helpers.py</a></td>
+                <td>122</td>
+                <td>95</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="27 122">22%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_logging_py.html">airflow/utils/logging.py</a></td>
+                <td>90</td>
+                <td>71</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="19 90">21%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_operator_helpers_py.html">airflow/utils/operator_helpers.py</a></td>
+                <td>15</td>
+                <td>14</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="1 15">7%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_state_py.html">airflow/utils/state.py</a></td>
+                <td>30</td>
+                <td>10</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="20 30">67%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_timeout_py.html">airflow/utils/timeout.py</a></td>
+                <td>28</td>
+                <td>15</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="13 28">46%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_utils_trigger_rule_py.html">airflow/utils/trigger_rule.py</a></td>
+                <td>13</td>
+                <td>2</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="11 13">85%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_www_py.html">airflow/www.py</a></td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="0 0">100%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_www_app_py.html">airflow/www/app.py</a></td>
+                <td>66</td>
+                <td>50</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="16 66">24%</td>
+            </tr>
+            
+            <tr class="file">
+                <td class="name left"><a href="airflow_www_blueprints_py.html">airflow/www/blueprints.py</a></td>
+                <td>8</td>
+                <td>3</td>
+                <td>0</td>
+                
+                <td class="right" data-ratio="5 8">63%</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <p id="no_rows">
+        No items found using the specified filter.
+    </p>
+</div>
+
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.1</a>,
+            created at 2016-06-28 22:16
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

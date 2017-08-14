@@ -1,0 +1,12 @@
+{
+  "Database":{
+    // Database Server's IP
+    "host": "127.0.0.1",
+    // Database username
+    "user": "dbusr",
+    // Database password
+    "pwd": "dbpwd",
+    // Database name
+    "database": "dbname"
+   }
+}

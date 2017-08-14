@@ -1,0 +1,42 @@
+{
+  "table_name": "daily",
+  "table_query": "CREATE TABLE IF NOT EXISTS daily(
+      view_id varchar(15),
+      view_name varchar(100),
+      date date,
+      yearweek int,
+      usertype varchar(100),
+      source varchar(100),
+      medium varchar(100),
+      campaign varchar(250),
+      pageviews int,
+      sessions int,
+      bounces int,
+      exits int,
+      avgsessionduration decimal,
+      users int,
+      primary key(view_id, view_name, date, yearweek, usertype, source, medium, campaign));",
+  "backfill_date": "2017-06-01",
+  "view_ids":[
+    {"view_id": "ga:111111111", "view_name": "All Website Data"},
+    {"view_id": "ga:111111112", "view_name": "Desktop Website"},
+    {"view_id": "ga:111111113", "view_name": "Mobile Website"}
+  ],
+  "metrics":[
+    {"expression": "ga:pageviews", "alias": "pageviews"},
+    {"expression": "ga:sessions", "alias": "sessions"},
+    {"expression": "ga:bounces", "alias": "bounces"},
+    {"expression": "ga:exits", "alias": "exits"},
+    {"expression": "ga:avgSessionDuration", "alias": "avgsessionduration"},
+    {"expression": "ga:users", "alias": "nonadditive_users"}
+  ],
+  "dimensions":[
+    {"name": "ga:date"},
+    {"name": "ga:yearweek"},
+    {"name": "ga:usertype"},
+    {"name": "ga:source"},
+    {"name": "ga:medium"},
+    {"name": "ga:campaign"}
+  ],
+  "additional_inf": {}
+}
