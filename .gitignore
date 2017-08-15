@@ -2,3 +2,4 @@ daily_config/*
 weekly_config/*
 daily_config.json
 weekly_config.json
+google/client_secrets.json
